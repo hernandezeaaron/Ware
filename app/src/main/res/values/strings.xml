@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ware</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="do_you_agree_to_our_terms_and_privacy_policy">Do you agree to our Terms and Privacy Policy?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="intro">Ware—Your personal database for keeping your watch and read lists. \n\nWare came from the words watchlist and readlist. “Wa” from watch and “re” from read. This is a revamped notes app dedicated to people who are fond of watching movies/series/dramas and reading books, also called bookworms. This is an application that makes it easier for users to keep track of the things they want to watch and read.</string>
+    <string name="username">Username\n</string>
+    <string name="greetings">Hello there,</string>
+    <string name="name">John Thomas</string>
+</resources>
