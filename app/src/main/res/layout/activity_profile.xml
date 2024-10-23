@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Scrollable content -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Background Image -->
+
+                <ImageView
+                    android:id="@+id/background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="735dp"
+                    android:background="@drawable/profile_banner"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="138dp"
+                    android:layout_height="136dp"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/border_circle"
+                    android:padding="2dp"
+                    android:src="@drawable/ex_pfp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="214dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="224dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="end"
+                    android:text="@string/name"
+                    android:textColor="#0f0f0f"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/AccountCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="52dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/username">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/user_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Account Center"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="56dp"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/About"
+                    android:layout_width="319dp"
+                    android:layout_height="49dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AccountCenter">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="9dp"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/about" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="About"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="153dp"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Saved"
+                    android:layout_width="319dp"
+                    android:layout_height="49dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/About">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="17dp"
+                        android:src="@drawable/saved" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Saved"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="153dp"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Terms"
+                    android:layout_width="319dp"
+                    android:layout_height="49dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Saved">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="17dp"
+                        android:src="@drawable/file" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Terms and Privacy"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SignOut"
+                    android:layout_width="319dp"
+                    android:layout_height="49dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Terms">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/sign_out" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sign Out"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="128dp"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/navbar"
+        android:elevation="10dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:padding="16dp">
+    </LinearLayout>
+</FrameLayout>

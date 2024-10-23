@@ -15,7 +15,6 @@
             android:id="@+id/nested_scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/navbar"
             android:fillViewport="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,7 +83,7 @@
                     android:layout_margin="20dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="34dp"
-                    android:paddingBottom="20dp"
+                    android:paddingBottom="150dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profile_image"
                     tools:listitem="@layout/parent_item" />
@@ -92,21 +91,18 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
-        <LinearLayout
-            android:id="@+id/navbar"
-            android:layout_width="350dp"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/navbar"
-            android:elevation="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/navbar"
+        android:elevation="10dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:padding="16dp">
     </LinearLayout>
-
-
-</RelativeLayout>
-    </FrameLayout>
+</FrameLayout>
