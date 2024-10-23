@@ -91,15 +91,15 @@
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/navbar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/navbar"
         android:elevation="10dp"
         android:layout_gravity="center|bottom"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        >
+        android:orientation="horizontal"/>
 
         <ImageButton
             android:id="@+id/btn_home"

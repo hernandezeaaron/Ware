@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/next"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:width="8dp"
+            android:height="8dp"/>
+    </item>
+</layer-list>
