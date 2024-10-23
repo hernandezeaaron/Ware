@@ -20,4 +20,6 @@
     <string name="username">Username\n</string>
     <string name="greetings">Hello there,</string>
     <string name="name">John Thomas</string>
+    <string name="textToSignUp">Don\'t have an account? Sign Up</string>
+    <string name="watchlist_title">Watchlist</string>
 </resources>

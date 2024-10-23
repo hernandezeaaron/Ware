@@ -10,19 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Scrollable content -->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nested_scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/navbar"
             android:fillViewport="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-                <!-- Background Image -->
 
                 <ImageView
                     android:id="@+id/background_image"
@@ -84,29 +80,74 @@
                     android:layout_margin="20dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="34dp"
-                    android:paddingBottom="20dp"
+                    android:paddingBottom="150dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profile_image"
-                    tools:listitem="@layout/parent_item" />
+                    tools:listitem="@layout/parent_item"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
-        <LinearLayout
-            android:id="@+id/navbar"
-            android:layout_width="350dp"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/navbar"
-            android:elevation="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="16dp">
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/navbar"
+        android:elevation="10dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/homepage"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/btn_watchlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/watchlist"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/btn_readlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/readlist"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/profile"
+            android:scaleType="fitCenter" />
 
     </LinearLayout>
 
-
-</RelativeLayout>
-    </FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="#4eb080"
+        android:elevation="100dp"
+        android:src="@drawable/add"
+        />
+</FrameLayout>
