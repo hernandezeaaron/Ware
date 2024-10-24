@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Scrollable content -->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nested_scroll_view"
             android:layout_width="match_parent"
@@ -20,8 +19,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-                <!-- Background Image -->
 
                 <ImageView
                     android:id="@+id/background_image"
@@ -51,8 +48,8 @@
                     android:layout_width="214dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="224dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:gravity="end"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_vertical"
                     android:text="@string/name"
                     android:textColor="#0f0f0f"
                     android:textSize="28sp"
@@ -85,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
 
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins"
                         android:text="Account Center"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
@@ -122,7 +119,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
 
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins"
                         android:text="About"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
@@ -158,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
 
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins"
                         android:text="Saved"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
@@ -194,7 +191,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
 
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins"
                         android:text="Terms and Privacy"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
@@ -230,7 +227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
 
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins"
                         android:text="Sign Out"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
@@ -244,24 +241,57 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
-
         </androidx.core.widget.NestedScrollView>
 
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/navbar"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/navbar"
         android:elevation="10dp"
+        android:gravity="center"
         android:layout_gravity="center|bottom"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/homepage"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/btn_watchlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/watchlist"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/btn_readlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/readlist"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/profile"
+            android:scaleType="fitCenter" />
     </LinearLayout>
+
 </FrameLayout>

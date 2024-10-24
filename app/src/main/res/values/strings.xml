@@ -22,4 +22,5 @@
     <string name="name">John Thomas</string>
     <string name="textToSignUp">Don\'t have an account? Sign Up</string>
     <string name="watchlist_title">Watchlist</string>
+    <string name="readlist_title">Readlist</string>
 </resources>

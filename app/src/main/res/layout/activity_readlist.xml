@@ -24,23 +24,10 @@
                     android:id="@+id/background_image"
                     android:layout_width="match_parent"
                     android:layout_height="735dp"
-                    android:background="@drawable/white_header_hp"
+                    android:background="@drawable/banner_jpg"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/profile_image"
-                    android:layout_width="119dp"
-                    android:layout_height="113dp"
-                    android:layout_marginTop="112dp"
-                    android:background="@drawable/border_circle"
-                    android:padding="2dp"
-                    android:src="@drawable/ex_pfp"
-                    app:layout_constraintEnd_toStartOf="@+id/username"
-                    app:layout_constraintHorizontal_bias="0.769"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,42 +35,25 @@
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="140dp"
-                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_semibold"
                     android:gravity="end"
-                    android:text="@string/name"
+                    android:text="@string/readlist_title"
                     android:textColor="#0f0f0f"
                     android:textSize="28sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.859"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/greetings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="112dp"
-                    android:fontFamily="@font/poppins"
-                    android:gravity="end"
-                    android:text="@string/greetings"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.906"
+                    app:layout_constraintHorizontal_bias="0.092"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_parent"
+                    android:id="@+id/watchlist_rvp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="34dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/username"
+                    tools:layout_editor_absoluteX="0dp"
                     android:paddingBottom="150dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/profile_image"
-                    tools:listitem="@layout/parent_item"/>
+                    tools:listitem="@layout/ware_items" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
@@ -126,7 +96,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:background="@drawable/readlist"
+            android:background="@drawable/read_cv"
             android:scaleType="fitCenter" />
 
         <ImageButton
@@ -138,15 +108,4 @@
             android:background="@drawable/profile"
             android:scaleType="fitCenter" />
     </LinearLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_addItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="135dp"
-        android:backgroundTint="#4eb080"
-        android:elevation="100dp"
-        android:src="@drawable/add" />
 </FrameLayout>
