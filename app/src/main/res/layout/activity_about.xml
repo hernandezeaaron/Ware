@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="735dp"
+                    android:background="@drawable/banner_jpg"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="end"
+                    android:text="@string/About"
+                    android:textColor="#0f0f0f"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.118"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/TermsLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/tac_a"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/About"
+                    app:layout_constraintVertical_bias="0.397"
+                    app:srcCompat="@drawable/tac_a" />
+
+
+                <TextView
+                    android:id="@+id/Copyright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/copyright_2024_ware"
+                    android:textColor="#f9f9f9"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="1410dp" />
+
+                <ImageView
+                    android:id="@+id/tac_a"
+                    android:layout_width="329dp"
+                    android:layout_height="1010dp"
+                    app:srcCompat="@drawable/curved_white_background"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="376dp" />
+
+                <ImageView
+                    android:id="@+id/Positions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/positions"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+                <TextView
+                    android:id="@+id/Team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="The Team"
+                    android:textColor="#0f0f0f"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/AboutContent"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <TextView
+                    android:id="@+id/AboutContent"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:fontFamily="@font/poppins"
+                    android:justificationMode="inter_word"
+                    android:text="@string/intro"
+                    android:textColor="#0f0f0f"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/About" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

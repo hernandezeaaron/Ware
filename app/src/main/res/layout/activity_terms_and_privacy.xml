@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="735dp"
+                    android:background="@drawable/banner_jpg"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TermsAndPrivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="end"
+                    android:text="@string/terms_and_privacy"
+                    android:textColor="#0f0f0f"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.118"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/TermsLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/tac_a"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TermsAndPrivacy"
+                    app:layout_constraintVertical_bias="0.399"
+                    app:srcCompat="@drawable/tac_a" />
+
+                <ImageView
+                    android:id="@+id/tac_a"
+                    android:layout_width="329dp"
+                    android:layout_height="930dp"
+                    app:srcCompat="@drawable/curved_white_background"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="376dp" />
+
+                <TextView
+                    android:id="@+id/TermsOfUse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/terms_of_use"
+                    android:textColor="#0f0f0f"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="269dp" />
+
+                <TextView
+                    android:id="@+id/PrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/privacy_policy"
+                    android:textColor="#0f0f0f"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="675dp" />
+
+                <TextView
+                    android:id="@+id/tou_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:lines="17"
+                    android:text="@string/tou"
+                    android:textColor="#0f0f0f"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="296dp" />
+
+                <TextView
+                    android:id="@+id/PolicyContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:lines="30"
+                    android:text="@string/policycontents"
+                    android:textColor="#0f0f0f"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="702dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
