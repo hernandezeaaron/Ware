@@ -3,12 +3,15 @@ package com.example.ware
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Profile : AppCompatActivity() {
+    lateinit var toAbout: LinearLayout
+    lateinit var toTerms: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -32,6 +35,20 @@ class Profile : AppCompatActivity() {
 
         btnWatchList.setOnClickListener {
             val intent = Intent(this, Watchlist::class.java)
+            startActivity(intent)
+        }
+
+        toAbout = findViewById(R.id.toAbout)
+
+        toAbout.setOnClickListener {
+            val intent = Intent(this, About::class.java)
+            startActivity(intent)
+        }
+
+        toTerms = findViewById(R.id.toTerms)
+
+        toTerms.setOnClickListener {
+            val intent = Intent(this, TermsAndPrivacy::class.java)
             startActivity(intent)
         }
     }

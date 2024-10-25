@@ -95,7 +95,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/About"
+                    android:id="@+id/toAbout"
                     android:layout_width="319dp"
                     android:layout_height="49dp"
                     android:background="?attr/selectableItemBackground"
@@ -142,7 +142,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.505"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/About">
+                    app:layout_constraintTop_toBottomOf="@id/toAbout">
 
                     <ImageView
                         android:layout_width="28dp"
@@ -168,7 +168,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/Terms"
+                    android:id="@+id/toTerms"
                     android:layout_width="319dp"
                     android:layout_height="49dp"
                     android:background="?attr/selectableItemBackground"
@@ -214,7 +214,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.505"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/Terms">
+                    app:layout_constraintTop_toBottomOf="@id/toTerms">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -290,7 +290,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:background="@drawable/profile"
+            android:background="@drawable/profile_cv"
             android:scaleType="fitCenter" />
     </LinearLayout>
 

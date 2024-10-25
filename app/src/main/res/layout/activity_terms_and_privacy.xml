@@ -17,8 +17,9 @@
             android:fillViewport="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
 
                 <ImageView
                     android:id="@+id/background_image"
@@ -46,80 +47,89 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-
-                <ImageView
-                    android:id="@+id/TermsLogo"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="283dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toTopOf="@+id/tac_a"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/curved_white_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/TermsAndPrivacy"
-                    app:layout_constraintVertical_bias="0.399"
-                    app:srcCompat="@drawable/tac_a" />
+                    app:layout_constraintTop_toBottomOf="@+id/TermsAndPrivacy">
 
-                <ImageView
-                    android:id="@+id/tac_a"
-                    android:layout_width="329dp"
-                    android:layout_height="930dp"
-                    app:srcCompat="@drawable/curved_white_background"
-                    tools:layout_editor_absoluteX="42dp"
-                    tools:layout_editor_absoluteY="376dp" />
+                    <ImageView
+                        android:id="@+id/horizontal_logo"
+                        android:layout_width="250dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/horizontal_logo_ware" />
 
-                <TextView
-                    android:id="@+id/TermsOfUse"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/terms_of_use"
-                    android:textColor="#0f0f0f"
-                    android:textSize="16sp"
-                    tools:layout_editor_absoluteX="56dp"
-                    tools:layout_editor_absoluteY="269dp" />
+                    <TextView
+                        android:id="@+id/TermsOfUse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/terms_of_use"
+                        android:textColor="#0f0f0f"
+                        android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/PrivacyPolicy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/privacy_policy"
-                    android:textColor="#0f0f0f"
-                    android:textSize="16sp"
-                    tools:layout_editor_absoluteX="56dp"
-                    tools:layout_editor_absoluteY="675dp" />
+                    <TextView
+                        android:id="@+id/tou_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:lines="30"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/tou"
+                        android:textColor="#0f0f0f"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/PolicyContent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TermsOfUse"
+                        app:layout_constraintVertical_bias="0.26" />
 
-                <TextView
-                    android:id="@+id/tou_content"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:lines="17"
-                    android:text="@string/tou"
-                    android:textColor="#0f0f0f"
-                    android:textSize="15sp"
-                    tools:layout_editor_absoluteX="56dp"
-                    tools:layout_editor_absoluteY="296dp" />
+                    <TextView
+                        android:id="@+id/PrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/privacy_policy"
+                        android:textColor="#0f0f0f"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.185"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tou_content" />
 
-                <TextView
-                    android:id="@+id/PolicyContent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:lines="30"
-                    android:text="@string/policycontents"
-                    android:textColor="#0f0f0f"
-                    android:textSize="15sp"
-                    tools:layout_editor_absoluteX="56dp"
-                    tools:layout_editor_absoluteY="702dp" />
+                    <TextView
+                        android:id="@+id/PolicyContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:lines="30"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/policycontents"
+                        android:textColor="#0f0f0f"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/PrivacyPolicy"
+                        tools:layout_editor_absoluteX="56dp" />
 
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
-
-
-
-
     </RelativeLayout>
-
 </FrameLayout>

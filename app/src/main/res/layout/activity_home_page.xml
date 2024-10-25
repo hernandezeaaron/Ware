@@ -95,9 +95,10 @@
         android:layout_centerHorizontal="true"
         android:layout_width="330dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/navbar"
         android:elevation="10dp"
+        android:gravity="center"
         android:layout_gravity="center|bottom"
         android:orientation="horizontal">
 
@@ -107,7 +108,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:background="@drawable/homepage"
+            android:background="@drawable/home_cv"
             android:scaleType="fitCenter" />
 
         <ImageButton
@@ -136,7 +137,6 @@
             android:layout_margin="20dp"
             android:background="@drawable/profile"
             android:scaleType="fitCenter" />
-
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -148,6 +148,5 @@
         android:layout_marginBottom="135dp"
         android:backgroundTint="#4eb080"
         android:elevation="100dp"
-        android:src="@drawable/add"
-        />
+        android:src="@drawable/add" />
 </FrameLayout>

@@ -8,7 +8,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="sign_up">Sign Up</string>
-    <string name="do_you_agree_to_our_terms_and_privacy_policy">Do you agree to our Terms and Privacy Policy?</string>
+    <string name="agree_to_our_terms_and_privacy_policy">By Signing Up you agree to our Terms and Privacy Policy</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="email">Email</string>
     <string name="first_name">First Name</string>
@@ -21,4 +21,15 @@
     <string name="name">John Thomas</string>
     <string name="textToSignUp">Don\'t have an account? Sign Up</string>
     <string name="watchlist_title">Watchlist</string>
+    <string name="readlist_title">Readlist</string>
+
+    <string name="terms_and_privacy">Terms and Privacy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="copyright_2024_ware">Copyright 2024 Ware</string>
+    <string name="About">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="policycontents">1. Information collection: Ware collects \ninformation you provide when you \nwhen you create an acount or use the \napp. This may include your name, \nemail address, and the content you add. \n2. Information Use: We use your \ninformation to: \n -Provide the Ware service. \n -Improve the app and its features. \n -Communicate with you about Ware. \n3. Data Security: We take reasonable \nmeasures to protect your information, \nbut we cannot guarantee absolute \nsecurity. \n4. Third-Party Services: Ware may use \nthird-party services that collect and \nprocess your data. Please refer to their \nprivacy policies for more information. \n5. Changes: We may update these \nTerms of Use and Privacy Policy. Your\nacceptance of the updated policies. \n6. Contact: If you have questions or \nconcerns, please contact us at \nware@realmail.com.\n\nBy using Ware, you agree to these\nTerms of Use and Privacy Policy.</string>
+    <string name="tou">1. Acceptance: By using Ware, you agree \nto there Terms of use. \n2. User Content: You are responsible for \nthe content you add to Ware. You grant \nWare a non-exclusive, worldwide, \nroyalty-free, license to use, reproduce \nmodify, adapt, publish, distribute, and \n display your content. \n3. Prohibited Conduct: you may not use \nWare to: \n -Upload harmful, illegal, or offensive\n content.\n -Promote or facilitate illegal activities.\n -Violate the rights of others. \n4. Termination: Ware may terminate \nyour account or access to the app at\nany time, for any reason.</string>
+    <string name="the_team">The Team</string>
+
 </resources>
